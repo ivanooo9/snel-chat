@@ -7,7 +7,6 @@ from .products import (
     handle_cam_place,
     handle_cam_conn,
     handle_other_context,
-    handle_product_confirm,
     handle_ups_context
 )
 from .calendar import handle_calendar_date, handle_calendar_time, handle_calendar_confirm
@@ -34,7 +33,6 @@ FLOW_HANDLERS = {
     'prod_cam_place': handle_cam_place,
     'prod_cam_conn': handle_cam_conn,
     'prod_other_context': handle_other_context,
-    'prod_confirm': handle_product_confirm,
     'prod_ask_ups_context': handle_ups_context,
     
     # Calendar

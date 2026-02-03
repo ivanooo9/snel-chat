@@ -47,7 +47,7 @@ def chat():
                 session.clear()
                 session['step'] = 'menu_start'
                 session['phone'] = 'WEB'
-                return jsonify({'reply': "¡Hola soy Jenny tu asesora SNEL!..."}) # Simplified init reply or call router
+                return jsonify({'reply': "¡Hola soy Paula tu asesora SNEL!..."}) # Simplified init reply or call router
 
         logger.info(f"Source: {'WhatsApp' if is_whatsapp else 'Web'} | Phone: {sender_phone} | Input: '{user_input}'")
 

@@ -63,15 +63,13 @@ def _register_internet_request(sector: str, state: dict) -> tuple[str, dict]:
     referral = state.get('referral', 'Desconocido')
     
     payload = {
-        "Fecha": datetime.datetime.utcnow().isoformat(),
-        "Telefono": phone,
-        "Categoria": "Internet",
-        "Sector": sector,
-        "Adicional": "-",
-        "ReferidoPor": referral
-    }
+    "Fecha": datetime.datetime.utcnow().isoformat(),
+    "Telefono": phone,
+    "Sector": sector,
+    "ReferidoPor": referral
+}
     
-    success = send_to_appsheet("Solicitudes", payload)
+    success = send_to_appsheet("Solicitudes_Internet", payload)
     
     state = {'step': 'menu_start', 'phone': phone}
     

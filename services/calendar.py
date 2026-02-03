@@ -33,7 +33,7 @@ def check_collision(service, start_dt: datetime.datetime, end_dt: datetime.datet
              end_str += '-05:00'
 
         events_result = service.events().list(
-            calendarId=CALENDAR_ID,
+            calendarId="339d3661b13192ae764b2b469df74870e9738b47db5044d380f2f5cd986dec72@group.calendar.google.com",
             timeMin=start_str,
             timeMax=end_str,
             singleEvents=True,
